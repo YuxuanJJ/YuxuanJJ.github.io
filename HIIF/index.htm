@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+   
+    <title>HIIF: Hierarchical Encoding based Implicit Image Function for Continuous Super-resolution</title>
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+       <link rel="stylesheet" href="../css/style.css">
+</head>
+
+        <!-- you should probably put some google analytics / meta bits and pieces
+	    here : PRH 
+    <meta property="og:title" content="Paul Hill's Website"> etc.
+      <script async src="https://www.googletagmanager.com/gtag/js?id=??????????"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', '??????????');
+  </script>
+    -->
+
+
+
+<body id="page-top">
+    <div class="page-container">
+        <div class="inner">
+            <div class="container">
+                <div class="row">
+                    <div class="row vertical-align">
+  
+                        <div class="col-md-10">
+                            <div class="title">
+                                <h1><center>HIIF: Hierarchical Encoding based Implicit Image Function for Continuous Super-resolution</center></h1>
+                                <div class="container-sm">
+								  <div class="row justify-content-md-center">									                                       
+                                        <div class="col-sm-auto">
+                                            <p><a href='https://yuxuanjj.github.io/'>Yuxuan Jiang</a></p>
+                                        </div>
+										<div class="col-sm-auto">
+                                            <p><a href='https://scholar.google.com/citations?user=xNwKDN8AAAAJ&hl=en'>Ho Man Kwan</p>
+                                        </div>
+										<div class="col-sm-auto">
+                                            <p><a href='https://scholar.google.com/citations?user=bkXX0hUAAAAJ&hl=en'>Tianhao Peng</p>
+                                        </div>
+										<div class="col-sm-auto">
+                                            <p><a href='https://scholar.google.com/citations?user=j2_80ewAAAAJ&hl=en'>Ge Gao</p>
+                                        </div>
+										<div class="col-sm-auto">
+                                            <p><a href='https://seis.bristol.ac.uk/~eexfz/index.htm'>Fan Zhang</a></p>
+                                        </div>
+										<div class="col-sm-auto">
+                                            <p><a href=''>Xiaoqing Zhu</a></p>
+                                        </div>
+										<div class="col-sm-auto">
+                                            <p><a href=''>Joel Sole</a></p>
+                                        </div>
+									<div class="col-sm-auto">
+                                            <p><a href='https://david-bull.github.io/'>David Bull</a></p>
+                                        </div>
+									
+                                    </div>
+									<center><p>University of Bristol</p></center>
+                                </div>
+                            </div>
+                        </div>
+			<div class="col-md-2">
+			    <p><a href='https://www.bristol.ac.uk'><img src="../uob-logo.svg" width="100%" height="20%" alt=""></a></p>
+			    <p><a href='https://www.bristol.ac.uk/vision-institute'><img src="../bvilogo.png" width="100%" height="20%" alt=""></a></p>
+			     <p><a href='https://vilab.blogs.bristol.ac.uk'><img src="../VILogo.jpg" width="100%" height="20%" alt=""></a></p>
+			    
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-md">
+                <h2>Abstract</h2>
+                <p>Recent advances in implicit neural representations (INRs) have shown significant promise in modeling visual signals for various low-vision tasks including image super-resolution (ISR). INR-based ISR methods typically learn continuous representations, providing flexibility for generating high-resolution images at any desired scale from their low-resolution counterparts. However, existing INR-based ISR methods utilize multi-layer perceptrons for parameterization in the network; this does not take account of the hierarchical structure existing in local sampling points and hence constrains the representation capability. In this paper, we propose a new \textbf{H}ierarchical encoding based \textbf{I}mplicit \textbf{I}mage \textbf{F}unction for continuous image super-resolution, \textbf{HIIF}, which leverages a novel hierarchical positional encoding that enhances the local implicit representation, enabling it to capture fine details at multiple scales. Our approach also embeds a multi-head linear attention mechanism within the implicit attention network by taking additional non-local information into account. Our experiments show that, when integrated with different backbone encoders, HIIF outperforms the state-of-the-art continuous image super-resolution methods by up to 0.17dB in PSNR.
+ </p>
+            </div>
+			<hr />
+            <div class="container-md">
+                <h2 id="poster">Proposed workflow</h2>
+				<p><img src="_VV_archi_CMR.pdf" width="80%" height="20%" alt="" class="mx-auto d-block"></p>
+
+
+            </div>
+            <hr />
+			
+			<div class="container-md">
+                <h2 id="poster">Decoder Design</h2>
+				<p><img src="Hidraft_v3.pdf" width="80%" height="20%" alt="" class="mx-auto d-block"></p>
+
+
+            </div>
+            <hr />
+			
+			
+			
+			
+			<div class="container-md">
+                <h2 id="poster">Evaluation results</h2>
+				<p><img src="HIIFcompare.jpg" width="50%" height="10%" alt="" class="mx-auto d-block"></p>
+				<p><img src="scatter.pdf" width="50%" height="10%" alt="" class="mx-auto d-block"></p>
+				<p><img src="hist.pdf" width="50%" height="10%" alt="" class="mx-auto d-block"></p>
+
+
+            </div>
+            <hr />
+			
+			<div class="container-md">
+                <h2 id="poster">Visual</h2>
+				<p><img src="vc.png" width="80%" height="20%" alt="" class="mx-auto d-block"></p>
+
+
+            </div>
+            <hr />
+
+            
+            <div class="container-md">
+                <h2 id="poster">Source code</h2>
+            <A HREF="">[Download]</a> source code from github.    
+
+
+            </div>
+			<hr />
+            <div class="container-md">
+                <h2>Citation</h2>
+				<pre class="citation">
+<@inproceedings{jiang2025hiif,
+  title={HIIF: Hierarchical encoding based implicit image function for continuous super-resolution},
+  author={Jiang, Yuxuan and Kwan, Ho Man and Peng, Tianhao and Gao, Ge and Zhang, Fan and Zhu, Xiaoqing and Sole, Joel and Bull, David},
+  booktitle={Proceedings of the Computer Vision and Pattern Recognition Conference},
+  pages={2289--2299},
+  year={2025}
+}
+}><A HREF="https://openaccess.thecvf.com/content/CVPR2025/papers/Jiang_HIIF_Hierarchical_Encoding_based_Implicit_Image_Function_for_Continuous_Super-resolution_CVPR_2025_paper.pdf">[paper]</a></pre>
+
+            </div>
+			<hr />
+            
+
+        </div>
+    </div>
+</body>
+
+</html>
+
